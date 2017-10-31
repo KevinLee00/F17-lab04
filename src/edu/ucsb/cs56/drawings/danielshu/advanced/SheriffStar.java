@@ -25,18 +25,22 @@ public class SheriffStar extends Star implements Shape
 
 	//Draw the outer pentagon
 	GeneralPath outerPentagon = new GeneralPath();
+
+	//NOTE: The order of points for the pentagon is not the same order
+	//to draw the Star
+
+	double point2X = x + width/2;
+	double point2Y = y + height/3;
 	
 	double point3X = x + width/2;
 	double point3Y = y + height;
 
+	double point4X = x - width/2;
+	double point4Y = y + height;
+
 	double point5X = x - width/2;
 	double point5Y = y + height/3;
 
-	double point2X = x + width/2;
-	double point2Y = y + height/3;
-
-	double point4X = x - width/2;
-	double point4Y = y + height;
 
 	outerPentagon.moveTo(x,y);
 	outerPentagon.lineTo(point2X, point2Y);
