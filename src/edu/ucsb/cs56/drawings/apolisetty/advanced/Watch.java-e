@@ -1,0 +1,67 @@
+package edu.ucsb.cs56.drawings.apolisetty.advanced;
+import java.awt.geom.GeneralPath; // combinations of lines and curves
+import java.awt.Shape; // general class for shapes
+
+import java.awt.geom.Line2D; 
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.Ellipse2D;
+
+import edu.ucsb.cs56.drawings.utilities.ShapeTransforms;
+import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
+
+/**
+   A vector drawing of a house that implements
+   the Shape interface, and so can be drawn, as well as
+   rotated, scaled, etc.
+      
+   @author Anu Polisetty
+   @version for CS56, W16, UCSB
+   
+*/
+public class Watch extends GeneralPathWrapper implements Shape
+{
+    /**
+       Constructor
+       
+       @param x x coord of lower left corner of house
+       @param y y coord of lower left corner of house
+       @param width width of the house
+       @param height of house (including first story and second story)
+    */
+    public Watch(double x, double y, double strapLength, double faceRadius)
+    {
+	
+        // Rather than having to scale at the end, we can just
+        // draw things the right way to begin with, using the
+        // x, y, width and height.   If you haven't already
+        // hard coded a particular drawing, this may be an easier
+        // way.
+        
+      
+        
+        // Make the first story
+        
+        Ellipse2D.Double watchFace = 
+            new Ellipse2D.Double(x, y , faceRadius, faceRadius);
+	
+        // make the roof.   Remember that y goes DOWN the page,
+        // so we ADD to y to get a "lower" value on the screen
+        
+        Rectangle2D.Double topStrap = 
+            new Rectangle2D.Double (x-(faceRadius/2), y+faceRadius+strapLength,
+                               faceRadius, strapLength );
+
+        Rectangle2D.Double bottomStrap = 
+            new Rectangle2D.Double (x-(faceRadius/2), y-faceRadius-strapLength,
+                               faceRadius, strapLength );
+	
+    
+	
+        // put the whole house together
+	
+        GeneralPath wholeWatch = this.get();
+        wholeWatch.append(watchFace, false);
+        wholeWatch.append(topStrap, false);
+        wholeWatch.append(bottomStrap, false);    
+    }
+}
