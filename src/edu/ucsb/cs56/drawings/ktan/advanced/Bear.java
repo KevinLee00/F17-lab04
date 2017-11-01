@@ -21,7 +21,7 @@ public class Bear extends GeneralPathWrapper implements Shape
 {
 	public Bear(double x, double y, double R){
 		
-		final double kappa = 0.5522847498;
+		//final double kappa = 0.5522847498;
 		/*
 		GeneralPath head = new GeneralPath(); //make the circle for the head
 		head.moveTo(x, y-R);
@@ -47,8 +47,9 @@ public class Bear extends GeneralPathWrapper implements Shape
 		whole.append(head, false); 
 		whole.append(left, false);
 		whole.append(right, false);
+		
 	//	Shape s = ShapeTransforms.translatedCopyOf(whole, x, y);
-
+	//	s  = ShapeTransforms.scaledCopyOf(s,R/2,R/2); 
 	//	this.set(new GeneralPath(s));
 	}
 

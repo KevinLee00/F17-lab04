@@ -18,7 +18,7 @@ import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
 
 public class AllMyDrawings
 {
-    /** Draw a picture with a few houses 
+    /** Draw a picture with bear faces 
      */
     
     public static void drawPicture1(Graphics2D g2) {
@@ -26,6 +26,12 @@ public class AllMyDrawings
 	// Make my bear goddamit 
 	BearFace b1 = new BearFace(100, 100, 100); 
 	g2.setColor(Color.BLACK); g2.draw(b1); 
+
+	Bear b2 = new BearFace(300, 300, 50);
+	g2.setColor(Color.RED); g2.draw(b2); 
+
+	Bear b3 = new BearFace(200, 200, 100); 
+	g2.setColor(new Color(0x002FA7)); g2.draw(b3);
 	/*
 	House h1 = new House(100,250,50,75);
 	g2.setColor(Color.CYAN); g2.draw(h1);
@@ -70,7 +76,7 @@ public class AllMyDrawings
     }
     
     
-    /** Draw a picture with a few houses and coffee cups
+    /** Draw a picture with a couple of bear faces 
      */
     public static void drawPicture2(Graphics2D g2) {
 	
@@ -131,11 +137,17 @@ public class AllMyDrawings
 	//g2.setColor(Color.BLACK);
 	BearFace b1 = new BearFace(300, 300, 300);
         g2.setColor(Color.RED); g2.draw(b1);
+
+	BearFace b2 = new BearFace(100, 100, 300); 
+	g2.setColor(Color.BLACK); g2.draw(b2); 
+
+	BearFace b3 = new BearFace(100, 100, 50); 
+	g2.setColor(Color.CYAN); g2.draw(b3); 
  
 	g2.drawString("Another bear face, but red", 20,20);
     }
     
-    /** Draw a different picture with a few houses and coffee cups
+    /** Draw a different picture with some more Bear Faces
      */
     
     public static void drawPicture3(Graphics2D g2) {
@@ -149,6 +161,12 @@ public class AllMyDrawings
 	
 	BearFace b1 = new BearFace(100, 100, 50);
         g2.setColor(Color.GREEN); g2.draw(b1);
+
+	BearFace b2 = new BearFace(75, 100, 100); 
+	g2.setColor(Color.BLACK); g2.draw(b2); 
+
+	BearFace b3 = new BearFace(100, 200, 50); 
+	g2.setColor(Color.CYAN); g2.draw(b3); 
 
 	/*
 	g2.setColor(Color.RED);     g2.draw(large);
