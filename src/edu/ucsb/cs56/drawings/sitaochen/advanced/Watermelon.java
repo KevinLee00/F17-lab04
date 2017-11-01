@@ -31,25 +31,12 @@ public class Watermelon extends GeneralPathWrapper implements Shape
         Shape watermelon = new Arc2D.Double(x, y, width, height*0.75, 0.0, 180.0, Arc2D.PIE);
         
                
-        // now we put the whole thing together ino a single path.
+
        
         GeneralPath wholeWatermelon = this.get();
         wholeWatermelon.append(watermelon, false);
                 
-        // translate to the origin by subtracting the original upper left x and y
-        // then translate to (x,y) by adding x and y
         
-        //Shape s = ShapeTransforms.translatedCopyOf(wholeWatermelon, -ORIG_ULX + x, -ORIG_ULY + y);
- 
-	// scale to correct height and width
-        //s =  ShapeTransforms.scaledCopyOf(s,
-	//				  width/ORIG_WIDTH,
-	//				  height/ORIG_HEIGHT) ;
-	 
-	// Use the GeneralPath constructor that takes a shape and returns
-	// it as a general path to set our instance variable cup
-        
-	//this.set(new GeneralPath(s));
         
     }
 
