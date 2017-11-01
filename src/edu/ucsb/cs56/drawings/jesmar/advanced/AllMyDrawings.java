@@ -142,7 +142,7 @@ public class AllMyDrawings
 	
 	
 	
-    /** Draw a different picture with a few Socks and coffee cups
+    /** Draw a different picture with a few Socks
      */
     
     public static void drawPicture3(Graphics2D g2) {

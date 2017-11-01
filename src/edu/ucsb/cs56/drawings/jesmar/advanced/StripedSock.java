@@ -13,7 +13,12 @@ import java.awt.geom.Rectangle2D;
 public class StripedSock extends Sock implements Shape
 {
     /**
-     * Constructor for objects of class Sock
+       Constructor
+
+       @param x x coord of top left corner of sock
+       @param y y coord of top left corner of sock
+       @param width width of the sock
+       @param height height of the sock
      */
     public StripedSock(double x, double y, double width, double height)
     {

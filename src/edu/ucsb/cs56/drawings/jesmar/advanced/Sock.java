@@ -14,7 +14,7 @@ import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
    rotated, scaled, etc.
       
    @author Jesmar Castillo
-   @version for CS56, F16, UCSB
+   @version for CS56, F17, UCSB
    
 */
 public class Sock extends GeneralPathWrapper implements Shape
@@ -25,7 +25,7 @@ public class Sock extends GeneralPathWrapper implements Shape
        @param x x coord of top left corner of sock
        @param y y coord of top left corner of sock
        @param width width of the sock
-       @param height of sock
+       @param height height of the sock
     */
     public Sock(double x, double y, double width, double height)
     {
