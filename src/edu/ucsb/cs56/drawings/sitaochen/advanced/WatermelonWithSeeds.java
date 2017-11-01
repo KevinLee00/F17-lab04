@@ -23,14 +23,6 @@ public class WatermelonWithSeeds extends Watermelon implements Shape
 	// get the GeneralPath that we are going to append stuff to
 	GeneralPath gp = this.get();
 	
-	// Make three windows, spaced like this, where w=width/10.0;
-	// | +--+ +--+ +--+ |
-	// | |  | |  | |  | |
-	// | +--+ +--+ +--+ |
-	// |w 2w w 2w w w2 w|
-	//
-	// The top of window will be at y + 0.5*height and the
-	// height of the window is 0.25height;
 	
 	double w = 0.0155 * width;
 	
@@ -41,9 +33,7 @@ public class WatermelonWithSeeds extends Watermelon implements Shape
 	Ellipse2D.Double win3 =
 	    new Ellipse2D.Double(x+0.25*width, y+0.25*height, w, w);
 	
-	// add the windows to the house
-	// Look up the meaning of the second parameter of append
-	// (Hint--is a method of "GeneralPath")
+
 	
         GeneralPath wholeWatermelon = this.get();
         wholeWatermelon.append(win1, false);
