@@ -135,14 +135,14 @@ public class AllMyDrawings
 	*/
 	//g2.setStroke(orig);
 	//g2.setColor(Color.BLACK);
-	BearFace b1 = new BearFace(300, 300, 300);
+	BearFace b1 = new BearFace(300, 300, 100);
         g2.setColor(Color.RED); g2.draw(b1);
 
 	BearFace b2 = new BearFace(100, 100, 300); 
 	g2.setColor(Color.BLACK); g2.draw(b2); 
-
-	BearFace b3 = new BearFace(100, 100, 50); 
-	g2.setColor(Color.CYAN); g2.draw(b3); 
+ 
+	Shape b3 = ShapeTransforms.rotatedCopyOf(b2, Math.PI/4.0);
+	g2.draw(b3); 
  
 	g2.drawString("Another bear face, but red", 20,20);
     }
@@ -157,7 +157,7 @@ public class AllMyDrawings
 	g2.drawString("A small bear face", 20,20);
 	
 	
-	// Draw some coffee cups.
+	// Draw some Bears
 	
 	BearFace b1 = new BearFace(100, 100, 50);
         g2.setColor(Color.GREEN); g2.draw(b1);
@@ -166,11 +166,13 @@ public class AllMyDrawings
 	g2.setColor(Color.BLACK); g2.draw(b2); 
 
 	BearFace b3 = new BearFace(100, 200, 50); 
-	g2.setColor(Color.CYAN); g2.draw(b3); 
+	g2.setColor(Color.RED); g2.draw(b3); 
+	
+	Shape b4 = ShapeTransforms.scaledCopyOf(b2, 0.5, 0.5);
+	g2.draw(b4); 
+	
+	Shape b5 = ShapeTransforms.translatedCopyOf(b3, 20, 20);
+	g2.draw(b5);
 
-	/*
-	g2.setColor(Color.RED);     g2.draw(large);
-	g2.setColor(Color.GREEN);   g2.draw(smallCC);
-	*/
     }       
 }

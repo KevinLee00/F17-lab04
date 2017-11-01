@@ -49,7 +49,8 @@ public class Bear extends GeneralPathWrapper implements Shape
 		whole.append(right, false);
 		
 	//	Shape s = ShapeTransforms.translatedCopyOf(whole, x, y);
-	//	s  = ShapeTransforms.scaledCopyOf(s,R/2,R/2); 
+	//	Shape s  = ShapeTransforms.scaledCopyOf(s,R/2,R/2); 
+				
 	//	this.set(new GeneralPath(s));
 	}
 
