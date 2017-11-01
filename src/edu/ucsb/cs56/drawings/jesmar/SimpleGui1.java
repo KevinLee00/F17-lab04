@@ -22,7 +22,7 @@ public class SimpleGui1 {
 	
 	JButton button = new JButton("Click me for the gains!") ;
 	
-	java.awt.Color myColor = new java.awt.Color(204,255,153);   // R, G, B values.
+	java.awt.Color myColor = new java.awt.Color(150, 35, 43);   // R, G, B values.
 	button.setBackground(myColor);
 	button.setOpaque(true);
 	
