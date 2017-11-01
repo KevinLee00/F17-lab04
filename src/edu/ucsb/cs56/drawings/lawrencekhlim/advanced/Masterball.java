@@ -7,7 +7,7 @@ import java.awt.geom.Arc2D;
 import java.awt.geom.Ellipse2D;
 
 /**
-   A Masterball
+   A Masterball is a Pokeball that contains an M that stands for Masterball."
       
    @author Lawrence Lim
    @version for CS56, F17, UCSB
@@ -17,6 +17,9 @@ public class Masterball extends Pokeball implements Shape
 {
     /**
      * Constructor for objects of class Masterball
+     * @param x top left x coordinate
+     * @param y top left y coordinate
+     * @param radius value of the radius of the Masterball
      */
     public Masterball(double x, double y, double radius)
     {
