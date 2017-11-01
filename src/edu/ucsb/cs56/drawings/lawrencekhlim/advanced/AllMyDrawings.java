@@ -20,8 +20,8 @@ import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
 public class AllMyDrawings
 {
     /** Draw a picture with a few Masterballs
+     * @param g2 - Graphics class is required to draw shapes.
      */
-    
     public static void drawPicture1(Graphics2D g2) {
 	
         Masterball h1 = new Masterball(30,50,50);
@@ -68,6 +68,7 @@ public class AllMyDrawings
     
     
     /** Draw a picture with a few Pokeballs and Masterballs
+     * @param g2 - Graphics class is required to draw shapes.
      */
     public static void drawPicture2(Graphics2D g2) {
 	
@@ -100,6 +101,7 @@ public class AllMyDrawings
     }
     
     /** Draw a different picture with a few Pokeballs
+     * @param g2 - Graphics class is required to draw shapes.
      */
     
     public static void drawPicture3(Graphics2D g2) {
