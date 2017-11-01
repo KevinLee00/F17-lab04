@@ -20,7 +20,10 @@ import edu.ucsb.cs56.drawings.utilities.GeneralPathWrapper;
 */
 public class TetherballPole extends Pole implements Shape
 {
-
+/** Constructor
+ 	Creates a pole with the constructor from superclass Pole
+	then uses geometric forumlas to create and  attach a rope and a ball
+	*/
     public TetherballPole(double x, double y, double width, double height)
     {
         // construct the basic house shell

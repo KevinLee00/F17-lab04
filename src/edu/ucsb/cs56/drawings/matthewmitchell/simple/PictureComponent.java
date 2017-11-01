@@ -102,7 +102,7 @@ public class PictureComponent extends JComponent
         // @@@ FINALLY, SIGN AND LABEL YOUR DRAWING
 	// @@@ 20, 20 are suggested coordinates, but you may change them
 
-        g2.drawString("This is a drawing of... -Matthew Mitchell", 20,20);
+        g2.drawString("This is a drawing of a house and a snowman -Matthew Mitchell", 20,20);
 	
     }
 }
