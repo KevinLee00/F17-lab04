@@ -130,19 +130,17 @@ public class AllMyDrawings
      */
     
     public static void drawPicture3(Graphics2D g2) {
-	
 	// label the drawing
-	
 	g2.drawString("A bunch of Coffee Cups by Phill Conrad", 20,20);
 	
-	
 	// Draw some coffee cups.
-	
 	CoffeeCup large = new CoffeeCup(100,50,225,150);
 	CoffeeCup smallCC = new CoffeeCup(20,50,40,30);
 	
-	g2.setColor(Color.RED);     g2.draw(large);
-	g2.setColor(Color.GREEN);   g2.draw(smallCC);
+	g2.setColor(Color.RED);     
+	g2.draw(large);
+	g2.setColor(Color.GREEN);   
+	g2.draw(smallCC);
 	
     }       
 }

@@ -29,27 +29,16 @@ public class SoccerBall extends Ball implements Shape
 	double bottomRoof = y + height*.222+ radiusWidth;
 	
 	Line2D.Double leftHex = new Line2D.Double(xLeft,yStart,xLeft,yEnd);
-	
 	Line2D.Double rightHex = new Line2D.Double(xRight,yStart,xRight,yEnd);	
-	
 	Line2D.Double leftTopSegment = new Line2D.Double(xLeft,yStart,xRemainderLeft,yRemainderLeft);
-	
 	Line2D.Double rightTopSegment = new Line2D.Double(xRight,yStart,xRemainderRight,yRemainderLeft);
-
 	Line2D.Double botRightSegment = new Line2D.Double(xLeft,yEnd,xRemainderBotRight,yRemainderBotLeft);
-
 	Line2D.Double botLeftSegment = new Line2D.Double(xRight,yEnd,xRemainderBotLeft, yRemainderBotLeft);
-
 	Line2D.Double topRoofSegRight = new Line2D.Double(xRight,yStart, x+ width/2,topRoof);
-	
 	Line2D.Double topRoofSegLeft = new Line2D.Double(xLeft,yStart, x + width/2, topRoof);
-
 	Line2D.Double botRoofSegRight = new Line2D.Double(xRight,yEnd,x + width/2, bottomRoof);
-
 	Line2D.Double botRoofSegLeft = new Line2D.Double(xLeft,yEnd, x+width/2, bottomRoof);
-	
 	Line2D.Double middleSegTop = new Line2D.Double(x+width/2, topRoof, x+width/2, y );
-
 	Line2D.Double middleSegBot = new Line2D.Double(x+width/2, bottomRoof, x+width/2, y+height );
 	
 	GeneralPath soccerBall = this.get();
