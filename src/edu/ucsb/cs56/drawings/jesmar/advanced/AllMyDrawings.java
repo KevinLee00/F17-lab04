@@ -64,15 +64,7 @@ public class AllMyDrawings
 	g2.setColor(Color.BLACK); 
 	g2.drawString("A few socks by Jesmar Castillo", 20,20);
     }
-    
-    
-	
-	
-	
-	
-	
-	
-	
+    	
     /** Draw a picture with a few Socks and coffee cups
      */
     public static void drawPicture2(Graphics2D g2) {
@@ -134,14 +126,7 @@ public class AllMyDrawings
 	g2.setColor(Color.BLACK); 
 	g2.drawString("A bunch of Coffee Cups and a few Socks by Jesmar Castillo", 20,20);
     }
-    
-	
-	
-	
-	
-	
-	
-	
+    	
     /** Draw a different picture with a few Socks
      */
     
