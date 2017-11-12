@@ -26,12 +26,15 @@ public class SimpleGui1 {
         button.setBackground(myColor);
         button.setOpaque(true);
         
+        button.addActionListener ( (p1) -> button.setBackground (new java.awt.Color ((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255))));
+        
         frame. setDefaultCloseOperation(JFrame. EXIT_ON_CLOSE) ;
         frame. getContentPane() . add(button) ;
         frame. setSize(300,300) ;
         frame. setVisible(true) ;
         
-        java.awt.Color buttonColor = new java.awt.Color (001,23,35);
-        button.setBackground (buttonColor);
+        
+        //java.awt.Color buttonColor = new java.awt.Color (001,23,35);
+        //button.setBackground (buttonColor);
     }
 }
