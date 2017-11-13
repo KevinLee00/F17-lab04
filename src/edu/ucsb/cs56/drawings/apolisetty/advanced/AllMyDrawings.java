@@ -31,8 +31,6 @@ public class AllMyDrawings
 	g2.draw(wCool);
 	
 	// @@@ FINALLY, SIGN AND LABEL YOUR DRAWING
-	
-	
 	g2.drawString("A few watches by Anu Polisetty", 20,20);
     
     }
@@ -47,8 +45,6 @@ public class AllMyDrawings
 	g2.draw(fancyBigFace);
 
 	// @@@ FINALLY, SIGN AND LABEL YOUR DRAWING
-	
- 
 	g2.drawString("Watch Urself by Anu Polisetty", 20,20);
     }
     

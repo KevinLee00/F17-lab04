@@ -42,7 +42,6 @@ public class FancyWatch extends Watch implements Shape
 	Ellipse2D.Double hole2 = new Ellipse2D.Double(centerPositionX, y + faceRadius + strapLength - strapLength/5 , 2, 2);
 	Ellipse2D.Double hole3 = new Ellipse2D.Double(centerPositionX, y + faceRadius + strapLength - 3*strapLength/10 , 2, 2);
 
-	
 		//add everything to fancy watch
         GeneralPath wholeWatch = this.get();
         wholeWatch.append(holder, false);
